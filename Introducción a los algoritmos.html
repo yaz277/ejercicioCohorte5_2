@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <base target="_top">
+  <title>INTRODUCCIÓN A LOS ALGORITMOS</title>
+</head>
+<body>
+  <div>
+    <div style="padding:5px;20px;">
+      <h1>INTRODUCCIÓN A LOS ALGORITMOS</h1>
+      <hr>
+    </div>
+  </div>
+  <div>
+    <div class="" id="" name="" style="text-align:left;max-width:500px;margin:30px auto;border:1px solid #ddd;padding:30px;">
+      <h1>MENTALIDADES</h1>
+      <ol>
+        <li>ORIENTACIÓN A FUTURO</li>
+        <li>RESPONSABILIDAD PERSONAL</li>
+        <li>MENTALIDAD DE CRECIMIENTO</li>
+        <li style="color:rgba(255,150,0)">PERSISTENCIA</li>
+      </ol>
+      <h2>HABILIDADES</h2>
+      <ol>
+        <li>TRABAJO EN EQUIPO</li>
+        <li style="color:red">ORIENTACIÓN AL DETALLE</li>
+        <li>GESTIÓN DEL TIEMPO</li>
+        <li>COMUNICACIÓN</li>
+      </ol>
+      <h2>AGENDA</h2>
+      <ol>
+        <li><b>APERTURA</b></li>
+        <li><b>CONTENIDO:</b> INTRODUCCIÓN A LOS ALGORITMOS</li>
+        <li><b>CONTENIDO:</b> ¿QUÉ ES JAVASCRIPT?</li>
+        <li><b>CONTENIDO:</b> PRIMITIVOS</li>
+        <li><b>CONTENIDO:</b> VARIABLES & COMENTARIOS</li>
+        <li><b>CONTENIDO:</b> PALABRAS RESERVADAS EN JAVASCRIPT</li>
+        <li><b>PRÁCTICA:</b> PRÁCTICA DE CODIFICACIÓN</li>
+        <li>CIERRE</li>
+      </ol>
+      <h2>OBJETIVOS DE APRENDIZAJE</h2>
+      <ol style="font-size:20px;">
+        <li>Explicar JavaScript</li>
+        <li>Explicar los algoritmos</li>
+        <li>Explicar la estructura de un algoritmo</li>
+        <li>Explicar los comentarios de código y cómo escribirlos en JavaScript</li>
+        <li>Describir palabras reservadas en JavaScript y dar ejemplos</li>
+        <li>Explicar los tipos primitivos y cuándo usar los diferentes tipos</li>
+        <li>Describir las variables clave y su uso</li>
+        <li>Escribir programas simples y correctos con JavaScript</li>
+      </ol>
+    </div>
+    <div style="text-align:center">
+      <h2>APERTURA ...</h2>
+    </div>
+    <div style="text-align:center;padding:30px;">
+      <h2>ESTUDIO DE CASO</h2>
+      <div style="font-size:20px;text-align:left;max-width:500px;margin:auto;border:1px solid #ddd;padding:30px;">
+        <p>María tiene una entrevista de trabajo para un rol de desarrollador de Java Junior y quiere buscar cómo llegar a la empresa.<br>
+        Ella va a Google Maps para buscar la ruta que la llevará de su casa a la empresa.</p>
+        <p>¿Qué sucede en la computadora cuando María busca la ubicación?</p>
+      </div>
+    </div>
+    <div style="text-align:center;padding:30px;">
+      <div style="font-size:20px;text-align:left;max-width:500px;margin:auto;border:1px solid #ddd;padding:30px;">
+        <p>JavaScript es un lenguaje de programación interpretado, diseñado originalmente para ser utilizado en aplicaciones web en el lado del cliente (es decir, en el navegador web).<br>
+        Fue creado en 1995 por Brendan Eich mientras trabajaba en Netscape Communications Corporation.</p>
+        <p>JavaScript es un lenguaje de programación muy popular utilizado para crear aplicaciones web, móviles y de escritorio. Se utiliza principalmente para agregar interactividad y dinamismo a las páginas web, permitiendo a los desarrolladores crear efectos visuales, validar formularios, crear animaciones y más.</p>
+        <p>Además, también se puede utilizar en el lado del servidor con plataformas como Node.js.</p>
+        <p>JavaScript es un lenguaje de programación de alto nivel y orientado a objetos, con una sintaxis similar a la de otros lenguajes de programación como Java y C++.</p>
+        <p>Referencias:</p>
+        <ul>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
+          </li>
+          <li>
+            <a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript</a>
+          </li>
+        </ul><br>
+        <p><b>Primitivos en JavaScript</b></p>
+        <p>En programación, los primitivos se refieren a los tipos de datos básicos y simples que se utilizan para construir estructuras de datos más complejas. Los primitivos varían según el lenguaje de programación utilizado, pero suelen incluir tipos de datos como números enteros, números en coma flotante, caracteres y booleanos (valores verdadero/falso).</p>
+        <p>Estos tipos de datos primitivos en JavaScript se utilizan para realizar operaciones y cálculos básicos y se asignan directamente a variables. Además, cada tipo de dato primitivo en JavaScript se trata como un valor inmutable, lo que significa que su valor no puede ser modificado una vez que se ha creado.</p>
+        <div style="color:white;font-size:9">
+          <div style="background:#353541;padding:5px 10px;font-size:12px;font-weight:bold;">
+            JAVASCRIPT
+          </div>
+          <div style="background:#000000;padding:5px 10px;">
+            <br>
+            <span style="color:#818181">// primitivos previos a ECMAScript6</span><br>
+            var numero = 100 <span style="color:#818181">// Primitivo: Number, valor(número)</span><br>
+            var texto = "Esto es un texto" <span style="color:#818181">// Primitivo: String, valor(texto)</span><br>
+            var verdadero_o_falso = true <span style="color:#818181">// Primitivo: Boolean, valores( true, false)</span><br>
+            var nulo = null <span style="color:#818181">// Primitivo: Null, valor(null)</span><br>
+            var indefinido = undefined <span style="color:#818181">// Primitivo: undefined, valor(undefined)</span><br>
+          </div>
+        </div><br>
+        <div style="color:white;font-size:9">
+          <div style="background:#353541;padding:5px 10px;font-size:12px;font-weight:bold;">
+            JAVASCRIPT
+          </div>
+          <div style="background:#000000;padding:5px 10px;">
+            <br>
+            <span style="color:#818181">// primitivos posterior a ECMAScript6</span><br>
+            var numero = 100 <span style="color:#818181">// Primitivo: Number, valor(número)</span><br>
+            var texto = "Esto es un texto" <span style="color:#818181">// Primitivo: String, valor(texto)</span><br>
+            var verdadero_o_falso = true <span style="color:#818181">// Primitivo: Boolean, valores( true, false, null, undefined)</span><br>
+            var Symbol = true <span style="color:#818181">// Primitivo: Symbol, valor( identificador único )</span><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;padding:30px;">
+      <div style="font-size:20px;text-align:left;max-width:500px;margin:auto;border:1px solid #ddd;padding:30px;">
+        <p><b>Algoritmo</b></p>
+        <p>Un algoritmo es un procedimiento o fórmula para resolver un problema.</p>
+        <p>Un algoritmo en JavaScript puede ser definido como una función que toma uno o varios valores de entrada, realiza ciertas operaciones en estos valores y produce un resultado de salida.</p>
+        <div style="color:white;">
+          <div style="background:#353541;padding:5px 10px;font-size:12px;font-weight:bold;">
+            JAVASCRIPT
+          </div>
+          <div style="background:#000000;padding:5px 10px;">
+            <br>
+            function sumar(a, b) {<br>
+            &nbsp;&nbsp; return a + b;<br>
+            }
+          </div>
+        </div>
+        <p>Los algoritmos en JavaScript también pueden incluir estructuras de control de flujo como bucles "for" o "while", condicionales "if/else", y más.</p>
+        <p>Por ejemplo, aquí hay un algoritmo que utiliza un bucle "for" para sumar los elementos de un array:</p>
+        <div style="color:white;">
+          <div style="background:#353541;padding:5px 10px;font-size:12px;font-weight:bold;">
+            JAVASCRIPT
+          </div>
+          <div style="background:#000000;padding:5px 10px;">
+            <br>
+            function sumarArray(array) {<br>
+            var suma = 0;<br>
+            for (var i = 0; i &lt; array.length; i++) {<br>
+            &nbsp;&nbsp; suma += array[i];<br>
+            }<br>
+            <br>
+            return suma;<br>
+            }
+          </div>
+        </div>
+        <p>En este ejemplo, se define una función llamada "sumarArray" que toma un array como parámetro de entrada.<br>
+        La función utiliza un bucle "for" para recorrer cada elemento del array y sumarlos en la variable "suma".<br>
+        Finalmente, la función devuelve el valor de la variable "suma".</p>
+        <p>En resumen, los algoritmos en JavaScript se utilizan para resolver problemas o realizar tareas específicas utilizando una serie de pasos precisos y ordenados, que pueden incluir estructuras de control de flujo como bucles y condicionales.</p><br>
+        <br>
+        <p>La sintaxis general del bucle <b>for</b> es la siguiente:</p>
+        <div style="color:white;">
+          <div style="background:#353541;padding:5px 10px;font-size:12px;font-weight:bold;">
+            JAVASCRIPT
+          </div>
+          <div style="background:#000000;padding:5px 10px;">
+            <br>
+            for (inicialización; condición; expresión de iteración) {<br>
+            &nbsp;&nbsp;<span style="color:#818181">// código a ejecutar en cada iteración</span><br>
+            }
+          </div>
+        </div>
+        <p>Veamos cada una de estas partes en detalle:</p>
+        <ol>
+          <li><b>Inicialización:</b> Se define una variable y se le asigna un valor inicial. Esta parte del bucle se ejecuta solo una vez, al comienzo de la iteración.</li>
+          <li><b>Condición:</b> Se establece una condición que se evalúa al principio de cada iteración del bucle. Si la condición se cumple, se ejecuta el código dentro del bucle. Si la condición no se cumple, el bucle se detiene y la ejecución continúa después del bucle.</li>
+          <li><b>Expresión de iteración:</b> és de cada iteración del bucle, se evalúa esta expresión. Por lo general, se usa para actualizar la variable de inicialización. Esta expresión puede omitirse si no es necesaria.</li>
+          <li><b>Código a ejecutar en cada iteración:</b> Es el código que se ejecuta en cada iteración del bucle.</li>
+        </ol>
+      </div>
+    </div>
+    <div style="text-align:center;padding:30px;">
+      <div style="font-size:20px;text-align:left;max-width:500px;margin:auto;border:1px solid #ddd;padding:30px;">
+        <p><b>Variables</b></p>
+        <p>En JavaScript, una variable es un contenedor que se utiliza para almacenar valores.<br>
+        Las variables en JavaScript se utilizan para hacer referencia a valores que se utilizan en el código<br>
+        Las variables pueden ser definidas y redefinidas en cualquier momento durante la ejecución del programa.<br>
+        Hay tres maneras de declarar una variable en JavaScript:</p>
+        <div style="color:white;">
+          <div style="background:#353541;padding:5px 10px;font-size:12px;font-weight:bold;">
+            JAVASCRIPT
+          </div>
+          <div style="background:#000000;padding:5px 10px;">
+            <br>
+            var x = 5;<br>
+            let y = "hola"; <span style="color:#818181">// introducida en ECMAScript 6</span><br>
+            const z = true; <span style="color:#818181">// introducida en ECMAScript 6</span><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;padding:30px;">
+      <div style="font-size:20px;text-align:left;max-width:500px;margin:auto;border:1px solid #ddd;padding:30px;">
+        <p><b>Ejercicios</b></p>
+        <p>- Primitivos</p>
+        <p style="text-align:right;padding-right:10px;">concatenación de primitivos number y string</p>
+        <div style="color:white;">
+          <div style="background:#353541;padding:5px 10px;font-size:12px;font-weight:bold;">
+            JAVASCRIPT
+          </div>
+          <div style="background:#000000;padding:5px 10px;">
+            <br>
+            <p><span style="color: #808080;">// Ejemplo 1</span><br>
+            <span>console.log(1 + 1)</span><br>
+            <span style="color: #808080;">// Ejemplo 2</span><br>
+            <span>console.log(1 + "1")</span><br>
+            <span style="color: #808080;">// Ejemplo 3</span><br>
+            <span>console.log(2 * 3)</span><br>
+            <span style="color: #808080;">// Ejemplo 4</span><br>
+            <span>console.log(2 * "3")</span></p>
+            <div id="gtx-trans" style="position: absolute; left: -18px; top: -20px;">
+              &nbsp;
+            </div>
+          </div>
+        </div>
+        <p style="text-align:right;padding-right:10px;">comportamiento de primitivos booleanos null y undefined</p>
+        <div style="color:white;">
+          <div style="background:#353541;padding:5px 10px;font-size:12px;font-weight:bold;">
+            JAVASCRIPT
+          </div>
+          <div style="background:#000000;padding:5px 10px;">
+            <p>function existe(valor) {<br>
+            &nbsp; &nbsp;return !!valor;<br>
+            &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #808080;">&nbsp; // |</span><br>
+            <span style="color: #808080;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // |</span><br>
+            <span style="color: #808080;">//(operador de afirmación !!)</span><br>
+            }</p>
+            <p><span style="color: #808080;">// Ejemplo 1</span><br>
+            existe(undefined)</p>
+            <p><span style="color: #808080;">// Ejemplo 2</span><br>
+            existe(null)</p>
+            <p><span style="color: #808080;">// Ejemplo 3</span><br>
+            existe('hola')</p>
+            <p><span style="color: #808080;">// Ejemplo 4</span><br>
+            existe('')</p><br>
+            <br>
+            <p><span style="color: #808080;">// Ejemplo 5</span></p>
+            <p>function seraVerdad(){<br>
+            &nbsp; &nbsp; return 1 &gt; 0<br>
+            }</p>
+            <div id="gtx-trans" style="position: absolute; left: -8px; top: -20px;">
+              &nbsp;
+            </div><br>
+            <br>
+            seraVerdad()<br>
+            <br>
+            <p><span style="color: #808080;">// Ejemplo 6</span></p>
+            <p>function seraVerdad2(){<br>
+            &nbsp; &nbsp; return null === 0<br>
+            }</p>
+            <div id="gtx-trans" style="position: absolute; left: -8px; top: -20px;">
+              &nbsp;
+            </div><br>
+            <br>
+            seraVerdad2()<br>
+            <br>
+            <p><span style="color: #808080;">// Ejemplo 6</span></p>
+            <p>function seraVerdad(){<br>
+            &nbsp; &nbsp; return null === undefined<br>
+            }</p>
+            <div id="gtx-trans" style="position: absolute; left: -8px; top: -20px;">
+              &nbsp;
+            </div><br>
+            <br>
+            seraVerdad3()<br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;padding:30px;">
+      <h2>Matrices</h2>
+      <div style="font-size:20px;text-align:left;max-width:500px;margin:auto;border:1px solid #ddd;padding:30px;">
+        <ul>
+          <li dir="ltr">
+            <p dir="ltr"><span>Las</span> <span>matrices</span> <span>son un tipo de</span> <span>objeto</span> <span>en Javascript. Las matrices son una estructura de datos que contiene una lista de elementos.</span></p>
+          </li>
+        </ul>
+        <p><span><span>&nbsp;</span></span></p>
+        <ul>
+          <li dir="ltr">
+            <p dir="ltr"><span>La longitud y el tipo de</span> <span>matrices Javascript</span> <span>no son fijos.</span></p>
+          </li>
+        </ul>
+        <p><span><span>&nbsp;</span></span></p>
+        <ul>
+          <li dir="ltr">
+            <p dir="ltr"><span>Cada elemento de una matriz tiene una ubicación llamada</span> <span>índice</span><span>. Podemos acceder a un elemento de la matriz haciendo referencia a su índice.</span></p>
+          </li>
+        </ul>
+        <p><span><span>&nbsp;</span></span></p>
+        <ul>
+          <li dir="ltr">
+            <p dir="ltr"><span>Los</span> <span>índices de la matriz</span> <span>siempre comienzan con 0, que apunta al primer elemento de la matriz.</span></p>
+          </li>
+        </ul>
+        <ul>
+          <li dir="ltr">
+            <p dir="ltr"><span id="docs-internal-guid-ab0d3169-7fff-9498-a133-f55c50c67a31">Ordenamiento</span> <span id="docs-internal-guid-ab0d3169-7fff-9498-a133-f55c50c67a31">es ordenar una lista de elementos.</span></p>
+          </li>
+        </ul>
+        <p><span id="docs-internal-guid-ab0d3169-7fff-9498-a133-f55c50c67a31"><span id="docs-internal-guid-ab0d3169-7fff-9498-a133-f55c50c67a31">&nbsp;</span></span></p>
+        <ul>
+          <li dir="ltr">
+            <p dir="ltr"><span id="docs-internal-guid-ab0d3169-7fff-9498-a133-f55c50c67a31">Las matrices en Javascript tienen una función de ordenamiento incorporada. La</span> <span id="docs-internal-guid-ab0d3169-7fff-9498-a133-f55c50c67a31">función de ordenamiento</span> <span id="docs-internal-guid-ab0d3169-7fff-9498-a133-f55c50c67a31">toma una función de comparación para ordenar elementos.&nbsp;</span></p>
+          </li>
+        </ul>
+        <p>&nbsp;</p>
+        <ul>
+          <li dir="ltr">
+            <p dir="ltr"><span id="docs-internal-guid-ab0d3169-7fff-9498-a133-f55c50c67a31"></span><span id="docs-internal-guid-ab0d3169-7fff-9498-a133-f55c50c67a31">Los</span> <span id="docs-internal-guid-ab0d3169-7fff-9498-a133-f55c50c67a31">bucles For</span> <span id="docs-internal-guid-ab0d3169-7fff-9498-a133-f55c50c67a31">se utilizan para iterar a través de una secuencia/matriz de tipos de datos u objetos. Su ejecución depende de una condición booleana (verdadera o falsa) - si la condición es verdadera, entonces el bucle continúa ejecutándose, pero si la condición es falsa, entonces el bucle se rompe.</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align:center;padding:30px;">
+      <h2>Objetos</h2>
+      <div style="font-size:20px;text-align:left;max-width:500px;margin:auto;border:1px solid #ddd;padding:30px;">
+        <ul>
+          <li dir="ltr">
+            <p dir="ltr"><span id="docs-internal-guid-2edb0d91-7fff-e486-0fb2-181684c0a5c8">Un</span> <span id="docs-internal-guid-2edb0d91-7fff-e486-0fb2-181684c0a5c8">objeto</span> <span id="docs-internal-guid-2edb0d91-7fff-e486-0fb2-181684c0a5c8">es una colección de propiedades, definidas como un par clave-valor. Cada propiedad tiene una clave y un valor.&nbsp;</span></p>
+          </li>
+        </ul>
+        <p><span id="docs-internal-guid-2edb0d91-7fff-e486-0fb2-181684c0a5c8"><span id="docs-internal-guid-2edb0d91-7fff-e486-0fb2-181684c0a5c8">&nbsp;</span></span></p>
+        <ul>
+          <li dir="ltr">
+            <p dir="ltr"><span>La</span> <span>refactorización de código</span> <span>es el proceso de reestructurar el código de computadora existente sin cambiar su comportamiento externo.</span></p>
+          </li>
+        </ul>
+        <p>&nbsp;</p>
+        <ul>
+          <li dir="ltr">
+            <p dir="ltr"><span>La</span> <span>refactorización</span> <span>está destinada a mejorar los atributos del código, como la mantenibilidad, la legibilidad y la eficiencia.</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
